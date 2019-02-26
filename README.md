@@ -51,6 +51,10 @@ Once we have broken down the data into arrays of length zero or one the algorith
 
 ## Quick Sort
 
-Quick sort is similar to merge sort in that it will break down the data into smaller arrays until the lengths have reach zero or one. To begin breaking down the data into smaller arrays, the algorithm begins by finding the **pivot** or the center of the data. So if the array were [] we would start with the number 3.
+Quick sort is similar to merge sort in that it will break down the data into smaller arrays until the lengths have reach zero or one. To begin breaking down the data into smaller arrays, the algorithm chooses a **pivot** value. It will then move the values less than the pivot to the left of the pivot, and numbers greater than the pivot to the right of the pivot.
 
-Then the algorithm will place all values larger than 3 to the right of 3 and anything lower than 3 to the left of three in as-is order. So the data willno look like []. After 3 has been placed in the middle of the array, the algorithm will pick a new pivot point in the array on the left side of the previous pivot point. So, in the [], the new pivot point will be
+Say our array of is [3,5,4,2,1] the algorithm will start by chosing the number 3. The algorithm will then run through the rest of the data, placing values less than 3 to the left of 3 and values greater 3 to the right of 3. The array of numbers will now look like [2,1,**3**,5,4].
+
+Next, the algorithm picks a new number to the left of the previous pivot point, to be the new pivot value. In this scenario, there are only two numbers left of 3 which are 2 and 1. The algorithm splits these two numbers up into their own arrays. Now that the algorithm has broken every value to the left of the 3 down into their own arrays it will compare 1 and 2 and place them back into the original array in order. Thus, the data now will look like [1,2,3,5,4].
+
+After the left side has been sorted, the algorithm moves to the right side of 3, selectes a new pivot and repeats the entire process until the data is sorted.

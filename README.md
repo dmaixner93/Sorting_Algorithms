@@ -51,6 +51,9 @@ Once we have broken down the data into arrays of length zero or one the algorith
 
 ## Quick Sort
 
+**Time complexity: O(n log(n)) - Best/average case
+                   O(n<sup>2</sup>) - Worst case**
+
 Quick sort is similar to merge sort in that it will break down the data into smaller arrays until the lengths have reach zero or one. To begin breaking down the data into smaller arrays, the algorithm chooses a **pivot** value. It will then move the values less than the pivot to the left of the pivot, and numbers greater than the pivot to the right of the pivot.
 
 Say our array of is [3,5,4,2,1] the algorithm will start by chosing the number 3. The algorithm will then run through the rest of the data, placing values less than 3 to the left of 3 and values greater 3 to the right of 3. The array of numbers will now look like [2,1,**3**,5,4].

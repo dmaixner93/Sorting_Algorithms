@@ -22,7 +22,7 @@ Bubble sort is a sorting algorithm where the largest values "bubble" to the "top
 
 ## Selection Sort
 
-**Time complexity: O(n^2)
+**Time complexity: O(n<sup>2</sup>)
 
 Selection sort is very similar to bubble sort, the main difference instead of the larger values being places at the top the smallest numbers will be placed at the top of the data.
 

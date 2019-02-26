@@ -61,3 +61,11 @@ Say our array of is [3,5,4,2,1] the algorithm will start by chosing the number 3
 Next, the algorithm picks a new number to the left of the previous pivot point, to be the new pivot value. In this scenario, there are only two numbers left of 3 which are 2 and 1. The algorithm splits these two numbers up into their own arrays. Now that the algorithm has broken every value to the left of the 3 down into their own arrays it will compare 1 and 2 and place them back into the original array in order. Thus, the data now will look like [1,2,3,5,4].
 
 After the left side has been sorted, the algorithm moves to the right side of 3, selectes a new pivot and repeats the entire process until the data is sorted.
+
+## Radix Sort
+
+**Time Complexity: 
+
+Radix sort is different than any of the previous sorting algorithms because it sorts data but does not compare number to number. Radix sort exploits the fact tha information about the size of a number is encoded in the number of digits (Example: 200 > 78 = true).
+
+Radix sort begins by looking at all the numbers in a data set, more specifically, looking at the right-most number of a number within the data set.

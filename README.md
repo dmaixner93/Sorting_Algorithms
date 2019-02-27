@@ -48,6 +48,8 @@ Merge sort is more complex than the previous three algorithms. Merge sort works 
 
 Once we have broken down the data into arrays of length zero or one the algorithm will begin to compare all the arrays. Comparing the arrays smaller arrays will help us determine where each value will do in a larger array since all the data will be combined back into one large sorted array.
 
+![](images/merge_sort_two.png)
+
 ## Quick Sort
 
 **Time complexity: O(n log(n))** - Best/average case | **O(n<sup>2</sup>)** - Worst case

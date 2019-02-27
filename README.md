@@ -43,7 +43,7 @@ This process will repeat until the data is completely sorted from smallest to la
 
 ## Merge Sort
 
-**Time complexity: O(n log(n))
+**Time complexity: O(n log(n))**
 
 Merge sort is more complex than the previous three algorithms. Merge sort works by taking an array of data and splitting that array of data down into smaller arrays until each array has a length of one or zero.
 
@@ -64,7 +64,7 @@ After the left side has been sorted, the algorithm moves to the right side of 3,
 
 ## Radix Sort
 
-**Time Complexity: 
+**Time Complexity: **
 
 Radix sort is different than any of the previous sorting algorithms because it sorts data but does not compare number to number. Radix sort exploits the fact tha information about the size of a number is encoded in the number of digits (Example: 200 > 78 = true).
 

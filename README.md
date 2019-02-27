@@ -6,12 +6,12 @@ When it comes to data, their are many ways to actually sort it. Before sorting t
 
 The types of sorting algorithms that will be discussed in this repository are:
 
-** Basic Sorting Algorithms**
+**Basic Sorting Algorithms**
 - Bubble Sort
 - Selection Sort
 - Insertion Sort
 
-** Intermediate Sorting Algorithms**
+**Intermediate Sorting Algorithms**
 - Merge Sort
 - Quick Sort
 - Radix Sort
@@ -19,6 +19,7 @@ The types of sorting algorithms that will be discussed in this repository are:
 ## Bubble Sort
 
 **Time complexity: O(n) - Best case
+                    <br>
                    O(n<sup>2</sup>) - Average/worst case**
 
 Bubble sort is a sorting algorithm where the largest values "bubble" to the "top" of the data.
@@ -26,6 +27,7 @@ Bubble sort is a sorting algorithm where the largest values "bubble" to the "top
 ## Selection Sort
 
 **Time complexity: O(n) - Best Case
+                    <br>
                    O(n<sup>2</sup>)**
 
 Selection sort is very similar to bubble sort, the main difference instead of the larger values being places at the top the smallest numbers will be placed at the top of the data.
@@ -33,6 +35,7 @@ Selection sort is very similar to bubble sort, the main difference instead of th
 ## Insertion Sort
 
 **Time complexity: O(n) - Best case
+                    <br>
                    O(n<sup>2</sup>) Average/worst case**
 
 Insertion sort works by sorting out the "left" half of the data until completely sorted. For example, if the data is completely unsorted we will start by taking say the lowest number in data set and placing it at the left-most position.
@@ -52,6 +55,7 @@ Once we have broken down the data into arrays of length zero or one the algorith
 ## Quick Sort
 
 **Time complexity: O(n log(n)) - Best/average case
+                    <br>
                    O(n<sup>2</sup>) - Worst case**
 
 Quick sort is similar to merge sort in that it will break down the data into smaller arrays until the lengths have reach zero or one. To begin breaking down the data into smaller arrays, the algorithm chooses a **pivot** value. It will then move the values less than the pivot to the left of the pivot, and numbers greater than the pivot to the right of the pivot.

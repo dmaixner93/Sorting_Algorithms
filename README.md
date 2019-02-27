@@ -64,7 +64,7 @@ In this version, we will select the first number of the array to be the pivot va
 
 After moving all the numbers, in most cases there will be numbers to the left and numbers to the right of the pivot value. However, just because the values are all less than the pivot number, the numbers are not in the correct order. The numbers are moved in the order that they are read in respectively. This means that all the numbers less than the pivot value need to be sorted.
 
-To begin sorting the numbers less than th pivot number, let's pick a new pivot number!
+To begin sorting the numbers less than th pivot number, let's pick a new pivot number.
 
 ![](images/quick_sort_three.png)
 

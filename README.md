@@ -58,7 +58,7 @@ Quick sort is similar to merge sort in that it will break down the data into sma
 
 4 will become the first pivot
 
-[<strong>4</strong>,6,2,5,1,3]
+![](images/quick_sort_one.png)
 
 Say our array of is [3,5,4,2,1] the algorithm will start by chosing the number 3. The algorithm will then run through the rest of the data, placing values less than 3 to the left of 3 and values greater 3 to the right of 3. The array of numbers will now look like [2,1,**3**,5,4].
 

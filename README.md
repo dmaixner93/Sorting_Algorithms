@@ -44,6 +44,8 @@ This process will repeat until the data is completely sorted from smallest to la
 
 Merge sort is more complex than the previous three algorithms. Merge sort works by taking an array of data and splitting that array of data down into smaller arrays until each array has a length of one or zero.
 
+![](images/merge_sort_one.png)
+
 Once we have broken down the data into arrays of length zero or one the algorithm will begin to compare all the arrays. Comparing the arrays smaller arrays will help us determine where each value will do in a larger array since all the data will be combined back into one large sorted array.
 
 ## Quick Sort

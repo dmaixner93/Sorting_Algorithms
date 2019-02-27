@@ -68,6 +68,10 @@ To begin sorting the numbers less than th pivot number, let's pick a new pivot n
 
 ![](images/quick_sort_three.png)
 
+Now that a new pivot number has been selected, the algorithm will now repeat the previous step. The numbers less than the new pivot number will be moved to the left, and the numbers greater than the new pivot number will be moved to the right.
+
+![](images/quick_sort_four.png)
+
 ## Radix Sort
 
 **Time Complexity:**

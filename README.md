@@ -88,7 +88,7 @@ Radix sort is different than any of the previous sorting algorithms because it s
 
 Radix sort begins by looking at all the numbers in a data set. Say we have [1554,6,3554,591,410,4388,900,5,8155,84,9635], the algorithm will look at all of the values in the array. The first pass through the array, the algorithm will look at the **right most digit** of **every value** in the array. The algorithm then sorts the values based on the digit and groups the numbers together.
 
-<img>
+![](images/radix_sort_one.png)
 
 After each number in the array is sorted by its right-most digit, the algorithm moves on to the next most right digit in the array (exactly one place to the left of the previous digit). The numbers will then be sorted by this digit and placed in there corresponding groupings. If the number is a single digit, then the number is left where it was last moved to.
 

@@ -60,11 +60,27 @@ The algorithm needs to make another iteration through the algorithm and make sur
 
 **Time complexity: O(n)** - Best case | **O(n<sup>2</sup>)** Average/worst case
 
-Insertion sort works by sorting out the "left" half of the data until completely sorted. For example, if the data is completely unsorted we will start by taking say the lowest number in data set and placing it at the left-most position.
+Insertion sort works by sorting out the "left" half of the data until completely sorted. Insertion sort starts just like the previous two algorithms (bubble sort and selection sort) where it will compare the first number in the array and second number in the array.
 
-Next, the algorithm will find the second lowest number. Once the second lowest number is found, it will be moved to the left most position available (exactly to the right of the lowest number).
+![](images/insertion_sort_one.png)
 
-This process will repeat until the data is completely sorted from smallest to largest (left to right respectively).
+Since four is less than six and the loops is currently at index zero (no established "left" side yet), we make the switch.
+
+![](images/insertion_sort_two.png)
+
+After making the swap, the loop is incremeneted and the algorithm is going to compare the numbers six and three. Three is less than six, so the algorithm knows it needs to be moved to the left of six. 
+
+![](images/insertion_sort_three.png)
+
+The added step in insertion sort is that once now we will check the left side of six and place three in its correct position.
+
+![](images/insertion_sort_four.png)
+
+We discover that three is less than 4 also, so we will move on to the next number. In this example, four is already at index zero so we know that this is where three will go until we discover numbers less than three.
+
+![](images/insertion_sort_five.png)
+
+This process will continue the entire iteration of the array, ending with an array that is sorted in ascending order.
 
 ## Merge Sort
 

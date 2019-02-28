@@ -38,7 +38,23 @@ Once the algorithm has iterated through the array or made its first pass through
 
 **Time complexity: O(n)** - Best Case | **O(n<sup>2</sup>)** - Average/worst case
 
-Selection sort is very similar to bubble sort, the main difference instead of the larger values being places at the top the smallest numbers will be placed at the top of the data.
+Selection sort is very similar to bubble sort, the difference from bubble sort is that selection sort will actually prioritize the smaller values in the array. When selection sort begins iterating through the array it is going to be comparing the current value of the loop (var i) and the next value in the array (var i + 1).
+
+One difference between bubble sort and selection sort is that selection sort does not immediately swap values. Instead if the next value is greater than the current value of the loop (i > (i + 1)), selection sort simply remembers the index of the value.
+
+![](images/selection_sort_one.png)
+
+Now the comparison has been made, index 1 will be saved since this is where the lowest value is currently located. The algorithm now continues its iteration. Three is less than four. The index where three is located will now be saved because it is the lowest current value of this iteration.
+
+![](images/selection_sort_two.png)
+
+Fast forward to the end of the first iteration. The algorithm ends up finding one to be the lowest value in the array and it just so happens to currently be the last value. Once the algorithm has finished its iteration, it needs to place the lowest found value at the beginning of the array. So the swap is made and 1 moves to the beginning of the array and 6 moves the end of the array (which just so happens to be where it will end up entirely).
+
+![](images/selection_sort_three.png)
+
+The algorithm needs to make another iteration through the algorithm and make sure all the values are in the current place. Since one iteration has already been made and we made a switch. The algorithm will not start at the index of zero since that is correct, the algorithm now begins at the index one and continues its iteration.
+
+![](images/selection_sort_four.png)
 
 ## Insertion Sort
 

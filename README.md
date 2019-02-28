@@ -72,6 +72,14 @@ Now that a new pivot number has been selected, the algorithm will now repeat the
 
 ![](images/quick_sort_four.png)
 
+This will continue to happen until all the numbers less than the original pivot number 4 are sorted out. After sorting all the numbers less than 4, the algorithm will move on to the numbers that were greater than 4, repeating the exact same process.
+
+![](images/quick_sort_five.png)
+
+The algorithm will chose the first number greater than 4 as the new pivot number. The algorithm now reads through the rest of the numbers greater than 4 and will determine values less than the new pivot number (6) moving the to the left of it, and numbers greater than the new pivot number movign them to the right. In this example there are no numbers greater than 6. When 5 is moved to the left of 6, the algorithm is fully sorted.
+
+![](images/quick_sort_six.png)
+
 ## Radix Sort
 
 **Time Complexity:**

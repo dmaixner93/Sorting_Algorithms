@@ -92,6 +92,6 @@ Radix sort begins by looking at all the numbers in a data set. Say we have [1554
 
 After each number in the array is sorted by its right-most digit, the algorithm moves on to the next most right digit in the array (exactly one place to the left of the previous digit). The numbers will then be sorted by this digit and placed in there corresponding groupings. If the number is a single digit, then the number is left where it was last moved to.
 
-<img>
+![](images/radix_sort_two.png)
 
 Radix sort continues to sort the numbers in the groupings until all the digits have been "read" in the number with the most digits.

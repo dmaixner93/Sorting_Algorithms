@@ -76,7 +76,7 @@ The added step in insertion sort is that once now we will check the left side of
 
 ![](images/insertion_sort_four.png)
 
-We discover that three is less than 4 also, so we will move on to the next number. In this example, four is already at index zero so we know that this is where three will go until we discover numbers less than three.
+We discover that three is less than four, so we will move on to the next number. In this example, four is already at index zero, thus, we know that this is where three will go until we discover numbers less than three. Numbers that are less than three will be placed before it in the array.
 
 ![](images/insertion_sort_five.png)
 
@@ -86,11 +86,11 @@ This process will continue the entire iteration of the array, ending with an arr
 
 **Time complexity: O(n log(n))**
 
-Merge sort is more complex than the previous three algorithms. Merge sort works by taking an array of data and splitting that array of data down into smaller arrays until each array has a length of one or zero.
+Merge sort is more complex than the previous three algorithms. Merge sort works by taking an array of data and splitting that array of data down into smaller arrays until we have arrays consisting of only one number,
 
 ![](images/merge_sort_one.png)
 
-Once we have broken down the data into arrays of length zero or one the algorithm will begin to compare all the arrays. Comparing the arrays smaller arrays will help us determine where each value will do in a larger array since all the data will be combined back into one large sorted array.
+Once we have broken down the data into arrays of single values the algorithm will begin to compare all the arrays. Comparing the smaller arrays will help the algorithm determine where each value will be placed, once all the data is combined back into one large sorted array.
 
 ![](images/merge_sort_two.png)
 
@@ -98,29 +98,29 @@ Once we have broken down the data into arrays of length zero or one the algorith
 
 **Time complexity: O(n log(n))** - Best/average case | **O(n<sup>2</sup>)** - Worst case
 
-Quick sort is similar to merge sort in that it will break down the array of numbers into smaller arrays until the lengths have reach one. To begin breaking down the data, the algorithm chooses a **pivot** value.
+Quick sort is similar to merge sort in that it will break down the array of numbers into smaller arrays of single values. To begin breaking down the data, the algorithm chooses a **pivot** value.
 
 ![](images/quick_sort_one.png)
 
-In this version, we will select the first number of the array to be the pivot value. After selecting our pivot value, we will run through the rest of the numbers in the array. We will move numbers less than the pivot value to the left of it and numbers largers than the pivot value to the right.
+In this version, the algorithm will select the first value in the array to be the pivot value. After selecting the pivot value, the algorithm will iterate through the rest of the values in the array. The algorithm will move values less than the pivot value to the left of the pivot value and numbers larger than the pivot value to the right.
 
 ![](images/quick_sort_two.png)
 
-After moving all the numbers, in most cases there will be numbers to the left and numbers to the right of the pivot value. However, just because the values are all less than the pivot number, the numbers are not in the correct order. The numbers are moved in the order that they are read in respectively. This means that all the numbers less than the pivot value need to be sorted.
+After moving all the values, in most cases there will be values to the left and values to the right of the pivot value. However, just because the values are all less than the pivot value, the values are not necessarily in the correct order. The values are moved in the order that they are read respectively. This means that all the values less than the pivot value need to be sorted.
 
-To begin sorting the numbers less than th pivot number, let's pick a new pivot number.
+To begin sorting the numbers less than th pivot number, the algorithm picks a new pivot number.
 
 ![](images/quick_sort_three.png)
 
-Now that a new pivot number has been selected, the algorithm will now repeat the previous step. The numbers less than the new pivot number will be moved to the left, and the numbers greater than the new pivot number will be moved to the right.
+Now that a new pivot value has been selected, the algorithm will now repeat the previous step. The valuess less than the new pivot value will be moved to the left, and the values greater than the new pivot value will be moved to the right.
 
 ![](images/quick_sort_four.png)
 
-This will continue to happen until all the numbers less than the original pivot number 4 are sorted out. After sorting all the numbers less than 4, the algorithm will move on to the numbers that were greater than 4, repeating the exact same process.
+This process will continue to happen until all the valuess less than the original pivot number (original pivot values was four) are sorted out. After sorting all the values less than four, the algorithm will move on to the valuess that were greater than four, repeating the exact same process.
 
 ![](images/quick_sort_five.png)
 
-The algorithm will chose the first number greater than 4 as the new pivot number. The algorithm now reads through the rest of the numbers greater than 4 and will determine values less than the new pivot number (6) moving the to the left of it, and numbers greater than the new pivot number movign them to the right. In this example there are no numbers greater than 6. When 5 is moved to the left of 6, the algorithm is fully sorted.
+The algorithm will chose the first value greater than four as the new pivot value. The algorithm now reads through the rest of the values greater than four and will determine values less than the new pivot value (6) moving the to the left of it, and numbers greater than the new pivot value movign them to the right. In this example there are no values greater than 6. When 5 is moved to the left of 6, the algorithm is fully sorted.
 
 ![](images/quick_sort_six.png)
 
@@ -128,9 +128,9 @@ The algorithm will chose the first number greater than 4 as the new pivot number
 
 **Time Complexity:**
 
-Radix sort is different than any of the previous sorting algorithms because it sorts data but does not compare number to number. Radix sort exploits the fact tha information about the size of a number is encoded in the number of digits (Example: 200 > 78 = true).
+Radix sort is different than any of the previous sorting algorithms because it sorts data but does not compare value to value. Radix sort exploits the fact tha information about the size of a value is encoded in the number of digits (Example: 200 > 78 = true).
 
-Radix sort begins by looking at all the numbers in a data set. Say we have [1554,6,3554,591,410,4388,900,5,8155,84,9635], the algorithm will look at all of the values in the array. The first pass through the array, the algorithm will look at the **right most digit** of **every value** in the array. The algorithm then sorts the values based on the digit and groups the numbers together.
+Radix sort begins by looking at all the values in a data set. Say we have **[1554,6,3554,591,410,4388,900,5,8155,84,9635]**, the algorithm will look at all of the values in the array. The first pass through the array, the algorithm will look at the **right most digit** of **every value** in the array. The algorithm then sorts the values based on the digit and groups the numbers together.
 
 ![](images/radix_sort_one.png)
 

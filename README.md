@@ -20,7 +20,9 @@ The types of sorting algorithms that will be discussed in this repository are:
 
 **Time complexity: O(n)** - Best case | **O(n<sup>2</sup>)** - Average/worst case
 
-Bubble sort is a sorting algorithm where the largest values "bubble" to the "top" of the data set or in this case, an array. When indexing though an array we looking at the current value of the loop, plus, the value next (directly to the right) of the value.
+Bubble sort is a sorting algorithm where the largest values of the dataset "bubble" (move) to the "top" of the dataset or in this case, an array. As with any array, to begin assessing the values in it, a loop will be used to access the values starting at 0. With any kind of sorting, we will be comparing two different values in the dataset. Instead of focusing only on the value at the index that `i` is equal to, we will also be comparing it with another number in the dataset. Bubble sort looks at the value located at the index of `i` and the value at index `i + 1`. 
+
+The goal of Bubble sort if to move the largest value to the top of the dataset. This means that we want to 'remember the biggest number of the comparision betweeen `i` and `i + 1`.
 
 ![](images/bubble_sort_one.png)
 
